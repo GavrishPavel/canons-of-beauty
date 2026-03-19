@@ -3,71 +3,149 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Canons of Beauty</title>
+  <title>Canóns of Beauty</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="header">
-    <div class="container nav">
-      <div class="logo">CANONS OF BEAUTY</div>
-      <nav>
-        <a href="#home">Главная</a>
-        <a href="#services">Косметология</a>
-        <a href="#spa">SPA</a>
-        <a href="#contact">Контакты</a>
-      </nav>
-    </div>
-  </header>
 
-  <section id="home" class="hero">
-    <div class="overlay"></div>
-    <div class="container hero-content">
-      <p class="kicker">RU BEAUTY • КОСМЕТОЛОГИЯ • SPA</p>
-      <h1>CANONS OF BEAUTY</h1>
-      <p class="subtitle">Это актуальность природной красоты</p>
-      <a class="btn" href="#services">Подробнее</a>
+  <section id="home" class="screen screen-blue hero">
+    <div class="arch"></div>
+    <header class="topbar">
+      <div class="lang">RU</div>
+      <a class="contact-link" href="#contact">КОНТАКТЫ</a>
+    </header>
+
+    <aside class="side-nav">
+      <a href="#home">Главная</a>
+      <a href="#cosmetology">Косметология</a>
+      <a href="#spa">SPA</a>
+      <a href="#beauty">Beauty</a>
+      <a href="#contact">Контакты</a>
+    </aside>
+
+    <div class="center-content">
+      <div class="logo-block">
+        <p class="logo-main">CANÓNS<br>of BEAUTY</p>
+        <p class="logo-sub">COSMETOLOGY STUDIO<br>MOSCOW</p>
+      </div>
+
+      <h1>CANONS OF BEAUTY —<br>ЭТО АКТУАЛЬНОСТЬ ПРИРОДНОЙ КРАСОТЫ<br>(КРАСОТЫ ОТ ПРИРОДЫ)</h1>
+
+      <div class="mark" aria-hidden="true"></div>
     </div>
   </section>
 
-  <section id="services" class="section">
-    <div class="container">
-      <h2>Услуги</h2>
-      <div class="cards">
-        <article class="card">
-          <h3>LIFT SCULPT</h3>
-          <p>Скульптурирующий массаж + пилинг Peach Peel.</p>
+  <section class="screen screen-light manifesto">
+    <div class="arch"></div>
+    <header class="topbar light">
+      <div class="lang">RU</div>
+      <a class="contact-link" href="#contact">КОНТАКТЫ</a>
+    </header>
+
+    <div class="center-content narrow">
+      <div class="logo-block dark">
+        <p class="logo-main">CANÓNS<br>of BEAUTY</p>
+        <p class="logo-sub">COSMETOLOGY STUDIO<br>MOSCOW</p>
+      </div>
+
+      <p class="manifesto-text">
+        Каноны красоты — это изменчивые эстетические идеалы внешности,
+        которые зависят от эпохи, культуры и общества,
+        но всегда отражают предпочтения большинства в данный момент,
+        фокусируясь на гармонии, симметрии и определенных чертах.<br><br>
+        CANONS OF BEAUTY — это актуальность природной красоты
+        (красоты от природы).
+      </p>
+    </div>
+  </section>
+
+  <section id="cosmetology" class="screen screen-light directions">
+    <header class="topbar light">
+      <div class="lang">RU</div>
+      <a class="contact-link" href="#contact">КОНТАКТЫ</a>
+    </header>
+
+    <aside class="side-nav dark">
+      <a href="#home">Главная</a>
+      <a href="#cosmetology">Косметология</a>
+      <a href="#spa">SPA</a>
+      <a href="#beauty">Beauty</a>
+      <a href="#contact">Контакты</a>
+    </aside>
+
+    <div class="center-content">
+      <div class="logo-block dark compact">
+        <p class="logo-main">CANÓNS<br>of BEAUTY</p>
+        <p class="logo-sub">COSMETOLOGY STUDIO<br>MOSCOW</p>
+      </div>
+
+      <div class="blob-grid">
+        <article>
+          <div class="blob blob-a"></div>
+          <h2>Косметология</h2>
         </article>
-        <article class="card">
-          <h3>Beauty Косметология</h3>
-          <p>Индивидуальные уходовые программы для лица и тела.</p>
+        <article>
+          <div class="blob blob-b"></div>
+          <h2>SPA</h2>
         </article>
-        <article class="card">
-          <h3>SPA Ритуалы</h3>
-          <p>Мягкое восстановление, релакс и забота о себе.</p>
+        <article id="beauty">
+          <div class="blob blob-c"></div>
+          <h2>Beauty</h2>
         </article>
       </div>
     </div>
   </section>
 
-  <section id="spa" class="section alt">
-    <div class="container">
-      <h2>Философия бренда</h2>
-      <p>
-        Мы подчёркиваем естественную красоту и создаём деликатный, современный сервис
-        в эстетике спокойствия, чистоты и премиального минимализма.
-      </p>
+  <section id="spa" class="screen treatment">
+    <div class="overlay"></div>
+    <aside class="side-nav">
+      <a href="#home">Главная</a>
+      <a href="#cosmetology">Косметология</a>
+      <a href="#spa">SPA</a>
+      <a href="#beauty">Beauty</a>
+      <a href="#contact">Контакты</a>
+    </aside>
+
+    <div class="center-content">
+      <h3>LIFT SCULPT</h3>
+      <p>скульптурирующий массаж<br>+ пилинг Peach Peel</p>
+      <a href="#contact" class="more">ПОДРОБНЕЕ &gt;&gt;</a>
     </div>
   </section>
 
-  <footer id="contact" class="footer">
-    <div class="container">
-      <p>CANONSOFBEAUTY.RU</p>
-      <p>Серебрянический переулок, 8</p>
-      <p><a href="tel:+71234567890">8 (123) 456 7890</a></p>
+  <footer id="contact" class="screen screen-blue footer">
+    <div class="arch"></div>
+    <header class="topbar">
+      <div class="lang">RU</div>
+      <a class="contact-link" href="#contact">КОНТАКТЫ</a>
+    </header>
+
+    <aside class="side-nav">
+      <a href="#home">Главная</a>
+      <a href="#cosmetology">Косметология</a>
+      <a href="#spa">SPA</a>
+      <a href="#beauty">Beauty</a>
+      <a href="#contact">Контакты</a>
+    </aside>
+
+    <div class="center-content">
+      <div class="logo-block">
+        <p class="logo-main">CANÓNS<br>of BEAUTY</p>
+        <p class="logo-sub">COSMETOLOGY STUDIO<br>MOSCOW</p>
+      </div>
+
+      <address>
+        СЕРЕБРЯНИЧЕСКИЙ ПЕРЕУЛОК, 8<br>
+        <a href="tel:+71234567890">8 (123) 456 7890</a>
+      </address>
+
+      <p class="domain">CANONSOFBEAUTY.RU</p>
+      <div class="mark" aria-hidden="true"></div>
     </div>
   </footer>
+
 </body>
 </html>
