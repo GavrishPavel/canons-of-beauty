@@ -11,6 +11,10 @@
 </head>
 <body>
 
+  <button class="burger" aria-label="Открыть меню" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+
   <section id="home" class="screen screen-blue hero">
     <div class="arch"></div>
     <header class="topbar">
@@ -146,6 +150,25 @@
       <div class="mark" aria-hidden="true"></div>
     </div>
   </footer>
+
+  <script>
+    const burger = document.querySelector('.burger');
+    const navLinks = document.querySelectorAll('.side-nav a');
+
+    if (burger) {
+      burger.addEventListener('click', () => {
+        const isOpen = document.body.classList.toggle('menu-open');
+        burger.setAttribute('aria-expanded', String(isOpen));
+      });
+    }
+
+    navLinks.forEach((link) => {
+      link.addEventListener('click', () => {
+        document.body.classList.remove('menu-open');
+        burger?.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
 
 </body>
 </html>

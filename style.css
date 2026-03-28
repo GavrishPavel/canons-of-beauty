@@ -16,6 +16,10 @@ body{
 
 a{color:inherit}
 
+.burger{
+  display:none;
+}
+
 .screen{
   position:relative;
   min-height:100vh;
@@ -199,18 +203,51 @@ a{color:inherit}
 
 @media (max-width: 760px){
   .screen{min-height:auto}
-  .topbar{right:16px;top:14px;font-size:10px;gap:14px}
+  .topbar{right:56px;top:14px;font-size:10px;gap:14px}
+
+  .burger{
+    position:fixed;
+    top:12px;
+    right:14px;
+    width:36px;
+    height:30px;
+    border:0;
+    background:transparent;
+    display:grid;
+    gap:5px;
+    align-content:center;
+    justify-items:stretch;
+    z-index:30;
+    cursor:pointer;
+    padding:0;
+  }
+  .burger span{
+    height:2px;
+    background:currentColor;
+    border-radius:2px;
+    transition:transform .2s ease, opacity .2s ease;
+  }
+  .burger{color:#fff}
+
+  body.menu-open .burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  body.menu-open .burger span:nth-child(2){opacity:0}
+  body.menu-open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 
   .side-nav{
-    position:static;
-    display:flex;
-    flex-wrap:wrap;
-    gap:8px 12px;
+    position:fixed;
+    inset:0;
+    display:none;
+    flex-direction:column;
+    gap:14px;
     justify-content:center;
-    padding:18px 14px 0;
-    margin:0 auto;
+    align-items:center;
+    background:rgba(17,21,50,.94);
+    padding:24px;
+    margin:0;
+    z-index:20;
   }
-  .side-nav a{font-size:22px}
+  body.menu-open .side-nav{display:flex}
+  .side-nav a{font-size:30px;color:#fff}
 
   .center-content{
     min-height:auto;
