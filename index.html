@@ -15,6 +15,14 @@
     <span></span><span></span><span></span>
   </button>
 
+  <nav class="mobile-menu" aria-label="Мобильная навигация">
+    <a href="#home">Главная</a>
+    <a href="#cosmetology">Косметология</a>
+    <a href="#spa">SPA</a>
+    <a href="#beauty">Beauty</a>
+    <a href="#contact">Контакты</a>
+  </nav>
+
   <section id="home" class="screen screen-blue hero">
     <div class="arch"></div>
     <header class="topbar">
@@ -153,7 +161,7 @@
 
   <script>
     const burger = document.querySelector('.burger');
-    const navLinks = document.querySelectorAll('.side-nav a');
+    const navLinks = document.querySelectorAll('.side-nav a, .mobile-menu a');
 
     if (burger) {
       burger.addEventListener('click', () => {
