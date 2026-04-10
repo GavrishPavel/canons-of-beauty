@@ -3,27 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Canóns of Beauty</title>
+  <title>SPA — Canóns of Beauty</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <button class="burger" aria-label="Открыть меню" aria-expanded="false">
+  <button class="burger burger-dark" aria-label="Открыть меню" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
 
   <nav class="mobile-menu" aria-label="Мобильная навигация">
-    <a href="#home">Главная</a>
-    <a href="#cosmetology">Косметология</a>
+    <a href="./index.html#home">Главная</a>
+    <a href="./index.html#cosmetology">Косметология</a>
     <a href="./spa.html">SPA</a>
-    <a href="#beauty">Beauty</a>
+    <a href="./index.html#beauty">Beauty</a>
     <a href="#contact">Контакты</a>
   </nav>
 
-  <section id="home" class="screen screen-blue hero">
+  <section class="screen screen-blue spa-hero">
     <div class="arch"></div>
     <header class="topbar">
       <div class="lang">RU</div>
@@ -31,100 +30,85 @@
     </header>
 
     <aside class="side-nav">
-      <a href="#home">Главная</a>
-      <a href="#cosmetology">Косметология</a>
+      <a href="./index.html#home">Главная</a>
+      <a href="./index.html#cosmetology">Косметология</a>
       <a href="./spa.html">SPA</a>
-      <a href="#beauty">Beauty</a>
+      <a href="./index.html#beauty">Beauty</a>
       <a href="#contact">Контакты</a>
     </aside>
 
-    <div class="center-content">
+    <div class="center-content spa-intro">
       <div class="logo-block">
         <p class="logo-main">CANÓNS<br>of BEAUTY</p>
-        <p class="logo-sub">COSMETOLOGY STUDIO<br>MOSCOW</p>
+        <p class="logo-sub">SPA RITUALS<br>MOSCOW</p>
       </div>
-
-      <h1>CANONS OF BEAUTY —<br>ЭТО АКТУАЛЬНОСТЬ ПРИРОДНОЙ КРАСОТЫ<br>(КРАСОТЫ ОТ ПРИРОДЫ)</h1>
-
-      <div class="mark" aria-hidden="true"></div>
+      <h1>SPA</h1>
+      <p class="spa-lead">Тихое пространство для восстановления, в котором забота о теле становится ритуалом.</p>
+      <a href="#rituals" class="more">ОТКРЫТЬ РИТУАЛЫ</a>
     </div>
   </section>
 
-  <section class="screen screen-light manifesto">
-    <div class="arch"></div>
-    <header class="topbar light">
-      <div class="lang">RU</div>
-      <a class="contact-link" href="#contact">КОНТАКТЫ</a>
-    </header>
-
-    <div class="center-content narrow">
-      <div class="logo-block dark">
-        <p class="logo-main">CANÓNS<br>of BEAUTY</p>
-        <p class="logo-sub">COSMETOLOGY STUDIO<br>MOSCOW</p>
-      </div>
-
-      <p class="manifesto-text">
-        Каноны красоты — это изменчивые эстетические идеалы внешности,
-        которые зависят от эпохи, культуры и общества,
-        но всегда отражают предпочтения большинства в данный момент,
-        фокусируясь на гармонии, симметрии и определенных чертах.<br><br>
-        CANONS OF BEAUTY — это актуальность природной красоты
-        (красоты от природы).
-      </p>
-    </div>
-  </section>
-
-  <section id="cosmetology" class="screen screen-light directions">
+  <section id="rituals" class="screen screen-light spa-grid-section">
     <header class="topbar light">
       <div class="lang">RU</div>
       <a class="contact-link" href="#contact">КОНТАКТЫ</a>
     </header>
 
     <aside class="side-nav dark">
-      <a href="#home">Главная</a>
-      <a href="#cosmetology">Косметология</a>
+      <a href="./index.html#home">Главная</a>
+      <a href="./index.html#cosmetology">Косметология</a>
       <a href="./spa.html">SPA</a>
-      <a href="#beauty">Beauty</a>
+      <a href="./index.html#beauty">Beauty</a>
       <a href="#contact">Контакты</a>
     </aside>
 
-    <div class="center-content">
+    <div class="center-content spa-grid-wrap">
       <div class="logo-block dark compact">
         <p class="logo-main">CANÓNS<br>of BEAUTY</p>
-        <p class="logo-sub">COSMETOLOGY STUDIO<br>MOSCOW</p>
+        <p class="logo-sub">SPA RITUALS<br>MOSCOW</p>
       </div>
 
-      <div class="blob-grid">
-        <article>
-          <div class="blob blob-a"></div>
-          <h2>Косметология</h2>
+      <div class="spa-grid">
+        <article class="spa-card">
+          <span class="spa-number">01</span>
+          <h2>Face Rituals</h2>
+          <p>Мягкие уходовые программы для расслабления, восстановления и естественного сияния кожи.</p>
         </article>
-        <article>
-          <div class="blob blob-b"></div>
-          <h2>SPA</h2>
+        <article class="spa-card">
+          <span class="spa-number">02</span>
+          <h2>Body Rituals</h2>
+          <p>Ритуалы для снятия напряжения, глубокого расслабления и деликатной работы с телом.</p>
         </article>
-        <article id="beauty">
-          <div class="blob blob-c"></div>
-          <h2>Beauty</h2>
+        <article class="spa-card">
+          <span class="spa-number">03</span>
+          <h2>Private Escape</h2>
+          <p>Индивидуальный формат ухода с атмосферой приватности, тишины и полного восстановления.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <section id="spa" class="screen treatment">
-    <div class="overlay"></div>
+  <section class="screen spa-ritual-banner">
     <aside class="side-nav">
-      <a href="#home">Главная</a>
-      <a href="#cosmetology">Косметология</a>
+      <a href="./index.html#home">Главная</a>
+      <a href="./index.html#cosmetology">Косметология</a>
       <a href="./spa.html">SPA</a>
-      <a href="#beauty">Beauty</a>
+      <a href="./index.html#beauty">Beauty</a>
       <a href="#contact">Контакты</a>
     </aside>
 
     <div class="center-content">
       <h3>LIFT SCULPT</h3>
       <p>скульптурирующий массаж<br>+ пилинг Peach Peel</p>
-      <a href="#contact" class="more">ПОДРОБНЕЕ &gt;&gt;</a>
+      <a href="#contact" class="more">ЗАПИСАТЬСЯ &gt;&gt;</a>
+    </div>
+  </section>
+
+  <section class="screen screen-light spa-philosophy">
+    <div class="center-content narrow">
+      <p class="manifesto-text small">
+        В основе SPA-направления — ритуалы, которые помогают замедлиться, восстановить внутренний баланс и вернуть телу ощущение легкости.
+      </p>
     </div>
   </section>
 
@@ -136,10 +120,10 @@
     </header>
 
     <aside class="side-nav">
-      <a href="#home">Главная</a>
-      <a href="#cosmetology">Косметология</a>
+      <a href="./index.html#home">Главная</a>
+      <a href="./index.html#cosmetology">Косметология</a>
       <a href="./spa.html">SPA</a>
-      <a href="#beauty">Beauty</a>
+      <a href="./index.html#beauty">Beauty</a>
       <a href="#contact">Контакты</a>
     </aside>
 
@@ -177,6 +161,5 @@
       });
     });
   </script>
-
 </body>
 </html>
